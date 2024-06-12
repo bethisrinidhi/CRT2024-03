@@ -1,0 +1,23 @@
+CAB SERVICE FOR EMPLOYEES:ARRAYS (HACKERRANK)
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,a,b,i;
+    scanf("%d%d%d",&n,&a,&b);
+    int k[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&k[i]);
+    }
+    for(i=0;i<n;i++){
+        if(k[i]>a && k[i]<b){
+            printf("%d ",k[i]);
+        }
+    }
+    return 0;
+}
