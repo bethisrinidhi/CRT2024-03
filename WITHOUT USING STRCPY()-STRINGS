@@ -1,0 +1,19 @@
+WITHOUT USING STRCPY()-STRINGS:
+
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+
+    char str[50],str1[50];
+    fgets(str,50,stdin);
+    int i;
+    for(i=0;str[i]!='\0';i++){
+        str1[i]=str[i];
+    }
+    str1[i]='\0';
+    printf("str:%s\nstr1:%s",str,str1);
+    
+
+    return 0;
+}
