@@ -1,0 +1,25 @@
+WITHOUT USING STRCAT() FUNCTION--STRINGS:
+
+
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+
+    char str[50],str1[50],str2[100];
+    scanf("%s",str);
+    scanf("%s",str1);
+    int i,j;
+    for(i=0;str[i]!='\0';i++){
+        str2[i]=str[i];
+    }
+    str2[i]=' ';
+    for(j=0;str1[j]!='\0';j++){
+        str2[i+j+1]=str1[j];
+    }
+    str2[i+j]='\0';
+    printf("str2:%s",str2);
+    
+
+    return 0;
+}
